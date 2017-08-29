@@ -1,0 +1,12 @@
+
+	./configure --with-features=huge \
+	--enable-multibyte \
+	--enable-rubyinterp=yes \
+	--enable-pythoninterp=yes \
+	
+	--enable-python3interp=yes \
+	--with-python3-config-dir=/usr/lib/python3.2/config \
+	--enable-perlinterp=yes \
+	--enable-luainterp=yes \
+ --enable-cscope --prefix=/usr
+make VIMRUNTIMEDIR=/usr/share/vim/vim80

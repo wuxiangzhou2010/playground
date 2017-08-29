@@ -1,0 +1,67 @@
+#include <assert.h>
+
+assert - abort the program if assertion is false
+
+可重入函数
+可重入（reentrant）函数可以由多于一个任务并发使用，而不必担心数据错误。相反， 不可重入（non-reentrant）函数不能由超过一个任务所共享，除非能确保函数的互斥（或者使用信号量，或者在代码的关键部分禁用中断）。可重入函数可以在任意时刻被中断，稍后再继续运行，不会丢失数据。可重入函数要么使用本地变量，要么在使用全局变量时保护自己的数据。
+
+xtime是从cmos电路中取得的时间，一般是从某一历史时刻开始到现在的时间，也就是为了取得我们操作系统上显示的日期。这个就是所谓的“实时时钟”，它的精确度是微秒。
+
+jiffies是记录着从电脑开机到现在总共的时钟中断次数。在linux内核中jiffies远比xtime重要
+
+HZ and Jiffies 
+
+
+hwclock [-r ] [--show]
+type -a hwclock 
+date 
+date 11062112 <== 格式 mmddHHMM，即 月日时分 
+hwclock -w 
+
+
+ntpdate 0.rhel.pool.ntp.org  
+date
+hwclock -w
+
+http://codingstandards.iteye.com/blog/786653
+
+tree
+tree -L 1 //level
+Base64
+在MIME格式的电子邮件中，base64可以用来将binary的字节序列数据编码成ASCII字符序列构成的文本。使用时，在传输编码方式中指定base64。使用的字符包括大小写字母各26个，加上10个数字，和加号「+」，斜杠「/」，一共64个字符，等号「=」用来作为后缀用途。
+关于这个编码的规则：
+①把3个字符变成4个字符。
+②每76个字符加一个换行符。
+③最后的结束符也要处理。
+linux base64 CTRL+D 作为结束符
+
+dgst, md5, md4, md2, sha1, sha, mdc2, ripemd160
+sha256sum sha1sum md5sum
+sha1sum file1 file2 > file.sha1
+sha1sum -c file.sha1
+
+sort和uniq
+
+dd if=/dev/zero bs=100k count=1 of=data.file
+split -b 20k data.file
+
+ strip - Discard symbols from object files.
+ readelf - Displays information about ELF files.
+        0x0804a00c - 0x0804a014 is .data
+        0x0804a014 - 0x0804a01c is .bss
+        0x08048330 - 0x0804850c is .text
+保存断点信息
+save breakpoints file-name-to-save
+source file-name-to-save
+info breakpoints 
+tbreak (tb)
+
+多进程 多线程
+http://www.cnblogs.com/dongzhiquan/archive/2011/12/15/2289450.html
+
+a callback function is a function that is called through a function pointer.
+
+VPTR 的原理
+C++ 是用C 实现的， C++有的功能都能用C来解释
+C++ STL
+C++ boost libraries

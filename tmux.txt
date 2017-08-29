@@ -1,0 +1,5 @@
+tmux 
+^b d  deattach
+tmux attach         # attach to the default settion 
+tmux list-sesssions 
+tmux new-session
