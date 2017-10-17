@@ -24,7 +24,9 @@ SYNOPSIS
        size_t offsetof(type, member);
 DESCRIPTION
        The macro offsetof() returns the offset of the field member from the start of the structure type.
-	   NAME
+------------------------------------------------------------------------------
+Process related
+NAME
        execl, execlp, execle, execv, execvp, execvpe - execute a file
 SYNOPSIS
        #include <unistd.h>
@@ -42,22 +44,25 @@ SYNOPSIS
        that  represent the argument list available to the executed program.  The first argument, by convention, should
        point to the filename associated with the file being executed.  The list of arguments must be terminated  by  a
        NULL pointer, and, since these are variadic functions, this pointer must be cast (char *) NULL.
-
+------------------------------------------------------------------------------
+Time Releated
 gettimeofday, settimeofday - get / set time
 #include <sys/time.h>
        int gettimeofday(struct timeval *tv, struct timezone *tz);
        int settimeofday(const struct timeval *tv, const struct timezone *tz);
 localtime_r
 strftime
+------------------------------------------------------------------------------
+Thread related
    pthread_create - create a new thread
 SYNOPSIS
        #include <pthread.h>
        int pthread_create(pthread_t *thread, const pthread_attr_t *attr,
                           void *(*start_routine) (void *), void *arg);
 
-pthread_setname_np
-
-
+pthread_setname_np(non portable)
+[POSIX Threads Programming]https://computing.llnl.gov/tutorials/pthreads/
+Signal Releated------------------------------------------------------------------------------
 #include <signal.h>
 
 int sigaction(int signum, const struct sigaction *act,

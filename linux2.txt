@@ -1,4 +1,4 @@
-1. fork vfork exec/ spanwn
+1. process management fork vfork exec/spanwn
 2. mmu virtual memory to physical memory  use a table page size 4k to 64k page fault/
 
 3. kenel startup bios grub  booloader init/systemd
@@ -12,11 +12,12 @@
 	1> system start and time is changed by NTP GPS or other source , timer used sem_timed wait will fail
 	2> system timer is not correct, previously use the real timer  rather than the monatonic timer
 		check every 10ms, rather than 100ms, use nanosleep rather than sleep(sleep is not correct)
-6. 	When the programe coredumped, the log is not saved, 
+6. 	When the program coredumped, the log is not saved, 
 	in this case should register some signal hanlder sigsegv etc/ to handle and fflush the log the file
 	when write log too frequently, there is perfomance issue. should write to memory first and then disk
 7. cross compile: cc /binutils as  ld ar objdump objcopy shrip nm realelf ..
-8. big edian and little edian
+8. big Endian and little Endian, naturally 0x1234 is a big Endian example
+    [Big and Little Endian]https://www.cs.umd.edu/class/sum2003/cmsc311/Notes/Data/endian.html
 9. padding, align to the largest type in the struct
 10. client socket： addr socket bind, connect and send
 	server socket:	addr socket bind, listen accept recv
