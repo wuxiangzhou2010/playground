@@ -1,0 +1,25 @@
+1. one compiling language(C/C++,java)
+2. one script language (bash, python, Javascript)
+3. 构建工具（cmake,make）
+4. regular expression
+5. Networking programming
+6. multi process and multi thread
+7. Database Programming
+
+web
+(lnmp, html5, javascript, npm)
+
+database：MySQL, SQLite
+
+software engineering:
+1. UML
+2. refactoring
+3. reentrant
+若一个程序或子程序可以“在任意时刻被中断然后操作系统调度执行另外一段代码，这段代码又调用了该子程序不会出错”，则称其为可重入（reentrant或re-entrant）的。即当该子程序正在运行时，执行线程可以再次进入并执行它，仍然获得符合设计时预期的结果。与多线程并发执行的线程安全不同，可重入强调对单个线程执行时重新进入同一个子程序仍然是安全的。
+
+Linux Kernel(Operation system)
+1. file model
+2. process and thread
+3. scheduling
+4. networking
+5. IPC
