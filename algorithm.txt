@@ -1,0 +1,8 @@
+Algorithm
+1. Sort
+2. Find 
+3. Linked List
+4. FIFO
+5. Stack
+6. Binary Tree
+7. Queue (Ring Queue)
