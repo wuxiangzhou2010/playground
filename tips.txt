@@ -1,4 +1,15 @@
-1. 软件异常挂掉， 但是log文件没有及时保存， fflush
+1. 软件异常挂掉， 但是log文件没有及时保存， fflush。
+    输入输出缓冲机制。 printf 不一定全部打印出来， 需要程序正常结束或者显式地flush stdout
 2. 绝对时间和相对时间
-3. warning, 不改变原来的逻辑
+    绝对时间是当前钟表的时间（Wall Time），时间的来源可能是GPS， NTP等等，可能会发生跳变。 相对时间是系统开机后就存在的一个计数式的时间， 相对于开机的时刻是线性增长的， 因此在使用timer的时候最好选用相对时间， 会比较准确。
+3. warning修改, 不改变原来的逻辑。
+    warning很可能成为bug的来源。
+    如u16->u8, 逻辑被变更等等
 4. 线程池会更节约资源， 传递函数入口和参数即可
+   减少了线程的数目，主要节约的是创建销毁线程的开销
+5. timer 机制
+    sleep 将导致性能下降。
+    sleep()  makes  the  calling  thread  sleep  until seconds seconds have elapsed or a signal arrives which is not ignored.
+    sleep 可能被信号打断。
+6. 消息机制
+    使用静态分配的内存或者只初始化一次的内存会比较快。但是会占用较多内存。
