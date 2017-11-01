@@ -10,6 +10,6 @@
 5. timer 机制
     sleep 将导致性能下降。
     sleep()  makes  the  calling  thread  sleep  until seconds seconds have elapsed or a signal arrives which is not ignored.
-    sleep 可能被信号打断。
+    sleep 可能被信号打断。spin_lock 中不要使用sleep（单核会死锁）
 6. 消息机制
     使用静态分配的内存或者只初始化一次的内存会比较快。但是会占用较多内存。
