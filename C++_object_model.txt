@@ -1,1 +1,4 @@
 简单对象模型（a simple object model）和表格驱动对象模型（a table-driven object model）
+
+* C versus C++
+    http://unthought.net/c++/c_vs_c++.html
