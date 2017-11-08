@@ -1,0 +1,57 @@
+Linux Road Map
+
+File System:
+    Virtual file system.(VFS)
+    ext4/NFS
+    mount
+    
+Basic coping and moving Operations:
+    cp/mv/scp/sync/rsync
+    
+Package Management:
+    dpkg/yum
+
+Task/Thead Management:
+    fork/vfork/exec/spanwn
+    MultiThreading Programing (pthread_xxx)
+    
+Interprocess communication (IPC)
+    mutex
+    lock/deadlock
+    condition variables
+    semaphore
+
+Memory Management:
+    MMU/segment/segmentation fault/slab
+
+User Account management:
+    useradd
+    passwd
+  
+Regular expression(in python/C++/Javascript/)
+    sed/awk/
+    
+Development
+    * gc/g++/clang/clang++/CC/CXX/cross-compile/
+    * binutils(ld/as and the other) 
+    * build-essential (gcc/g++/libc/make)
+
+Kernel Modules
+        ref: https://docs.oracle.com/cd/E52668_01/E54669/html/ol7-s1-modules.html
+    * lsmod (reading /proc/modules in fact, modules that is currently loaded into the kernel) 
+    * modinfo ahci (module information)
+    * modprobe [-rv] nfs (loads kernel modules)
+
+Bootstrap
+    BIOS/grub/lilo/systemd/init
+    MBR/kernel image/ramdisk
+    compile the kernel
+    kernel debug(Meng Ning's course)
+    
+Device driver(Kernel Modules)
+
+Useful software:
+    samba/vim/tmux
+    
+Networking Programing:
+    socket
