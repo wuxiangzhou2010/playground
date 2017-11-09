@@ -1,0 +1,23 @@
+Python/C/C++/JavaScript/shell ..swift
+linux
+
+Design
+    Timer system
+        timer  c  implementation 
+        https://stackoverflow.com/questions/19022320/implementing-timer-with-timeout-handler-in-c
+        https://www.quora.com/How-do-i-implement-the-simple-timer-in-C-programming
+    Debug/logging system
+        https://stackoverflow.com/questions/6508461/logging-library-for-c
+        http://hardysimpson.github.io/zlog/
+        https://github.com/wonder-mice/zf_log
+        https://github.com/kala13x/slog
+        
+    Configuration system
+    Watch dog system
+
+Static code analysis
+code review
+
+Version control
+git/svn/perforce
+
