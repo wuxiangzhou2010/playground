@@ -40,6 +40,7 @@ Dynamic memory:
     stack/heap
     
 Multiprocess/MultiThreading
+    pthread/thread library
 Web Programming
 
 
