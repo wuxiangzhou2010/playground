@@ -1,8 +1,18 @@
 Algorithm
 1. Sort
-2. Search/Find(Binary search)
+2.  /Find(Binary search)
 3. Divide and Conquer
-4. Dynamic programing
+
+Graphs
+Greedy Algorithms
+Divide and Conquer
+    Dynamic programming and memorization works together
+Network Flow
+Randomization and Hashing
+Algorithms on Strings
+    String matching
+    Suffix trees
+    Suffix arrays
 
 ADT(Abstract Data Type which is a mathematical model for data types))
 1. Linked List

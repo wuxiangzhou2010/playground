@@ -21,3 +21,20 @@ code review
 Version control
 git/svn/perforce
 
+Thread pool
+    init,create thread,
+    add task
+    delete task
+    task queue
+status 
+code indentation/ uncrustify
+memory management
+    
+mutex(thread mutex)
+    
+semaphore(producer and consumer)
+    
+cond wait (flag)
+
+
+
