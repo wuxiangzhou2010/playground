@@ -3,3 +3,5 @@ usful linkd:
 https://www-s.acm.illinois.edu/webmonkeys/book/c_guide/index.html
 [stdio.h stdlib.h time.h signal.h string.h]
 2. C standard library implementations, gnu libc(glibc) uclib,newlib,musl,microsoft clib
+3. pthread stack size on linux
+    https://www.experts-exchange.com/questions/29026689/pthread-stack-size-on-linux.html
