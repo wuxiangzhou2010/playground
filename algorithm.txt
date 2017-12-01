@@ -17,7 +17,7 @@ Algorithms on Strings
 ADT(Abstract Data Type which is a mathematical model for data types))
 1. Linked List
 2. Stack
-3. Queue (FIFORing Queue)
+3. Queue (FIFO,Ring Queue)
 4. Tree(Binary Search Tree)
 
 * ADT(abstract data type) 可以使用静态的数组， 也可以使用动态申请的数组或者链式存储。

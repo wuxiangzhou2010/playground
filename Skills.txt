@@ -1,5 +1,7 @@
-Python/C/C++/JavaScript/shell ..swift
-linux
+language:
+    compiled language:  C/C++/goLang/swift
+    script language:    Python/JavaScript/shell
+Linux
 
 Design
     Timer system
@@ -21,7 +23,7 @@ code review
 Version control
 git/svn/perforce
 
-Thread pool
+Thread pool(parallel programming)
     init,create thread,
     add task
     delete task
@@ -29,6 +31,7 @@ Thread pool
 status 
 code indentation/ uncrustify
 memory management
+{ring buffer}
     
 mutex(thread mutex)
     

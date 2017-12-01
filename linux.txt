@@ -62,7 +62,8 @@ SYNOPSIS
 
 pthread_setname_np(non portable)
 [POSIX Threads Programming]https://computing.llnl.gov/tutorials/pthreads/
-Signal Releated------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Signal Releated
 #include <signal.h>
 
 int sigaction(int signum, const struct sigaction *act,

@@ -1,4 +1,4 @@
-usful linkd:
+usful links:
 1. [The C Library Reference Guide]
 https://www-s.acm.illinois.edu/webmonkeys/book/c_guide/index.html
 [stdio.h stdlib.h time.h signal.h string.h]

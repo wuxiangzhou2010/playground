@@ -22,7 +22,7 @@ Interprocess communication (IPC)
     semaphore
 
 Memory Management:
-    MMU/segment/segmentation fault/slab
+    MMU/segment/segmentation fault/slab/Page/Swap
 
 User Account management:
     useradd
@@ -32,8 +32,8 @@ Regular expression(in python/C++/Javascript/)
     sed/awk/
     
 Development
-    * gc/g++/clang/clang++/CC/CXX/cross-compile/
-    * binutils(ld/as and the other) 
+    * gcc/g++/clang/clang++/CC/CXX/cross-compile/
+    * binutils(ld/as/readelf/objdump/objcopy/strip/gprof/ar/nm and the other) 
     * build-essential (gcc/g++/libc/make)
 
 Kernel Modules
@@ -43,8 +43,8 @@ Kernel Modules
     * modprobe [-rv] nfs (loads kernel modules)
 
 Bootstrap
-    BIOS/grub/lilo/systemd/init
-    MBR/kernel image/ramdisk
+    /UEFI/BIOS/grub/lilo/systemd/init
+    MBR/Kernel image/ramdisk
     compile the kernel
     kernel debug(Meng Ning's course)
     
