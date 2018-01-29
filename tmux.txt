@@ -1,5 +1,27 @@
-tmux 
-^b d  deattach
+## Tmux commands
+### launch 
+```sh
+tmux                 # launch a new tmux
 tmux attach         # attach to the default settion 
-tmux list-sesssions 
+tmux list-sesssions  
 tmux new-session
+```
+### window
+```sh
+^b d               # detach from current
+^b n               # next window
+^b c               # new window
+```
+### Session
+```sh
+^b s              # list tmux sessions
+^b )              # jump to next session
+^b (              # jump to previous session
+```
+Tricks
+```sh
+^b t            # show the time
+```
+
+reference:
+ [Tmux_cheat_sheet_en.pdf](https://wiki.deimos.fr/images/c/cc/Tmux_cheat_sheet_en.pdf)
